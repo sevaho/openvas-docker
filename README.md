@@ -13,5 +13,5 @@ $ docker build -t "openvas" .
 Run the container:
 
 ```shell
-$ docker run -e USER="admin" -e PASS="admin" -p 80:80 -p 443:443 openvas
+$ docker run -p 80:80 -p 443:443 openvas run -u "admin" -p "admin" # you can change username and password
 ```
